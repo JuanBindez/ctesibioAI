@@ -1,6 +1,14 @@
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments
 from datasets import Dataset
 
+
+#Here you pass the questions and answers to train your model
+datas = [
+    {"pergunta": "Qual é a capital do Brasil?", "resposta": "A capital do Brasil é Brasília."},
+    {"pergunta": "Quem descobriu o Brasil?", "resposta": "O Brasil foi descoberto por Pedro Álvares Cabral."},
+    {"pergunta": "Qual é a maior floresta tropical do mundo?", "resposta": "A maior floresta tropical do mundo é a Floresta Amazônica."},
+]
+
 model_name = "gpt2"
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 model = GPT2LMHeadModel.from_pretrained(model_name)
@@ -10,14 +18,7 @@ if tokenizer.pad_token is None:
     tokenizer.add_special_tokens(special_tokens)
     model.resize_token_embeddings(len(tokenizer))
 
-# datas example
-data = [
-    {"pergunta": "Qual é a capital do Brasil?", "resposta": "A capital do Brasil é Brasília."},
-    {"pergunta": "Quem descobriu o Brasil?", "resposta": "O Brasil foi descoberto por Pedro Álvares Cabral."},
-    {"pergunta": "Qual é a maior floresta tropical do mundo?", "resposta": "A maior floresta tropical do mundo é a Floresta Amazônica."},
-]
-
-formatted_data = [{"text": f"<BOS>{d['pergunta']} {d['resposta']}<EOS>"} for d in data]
+formatted_data = [{"text": f"<BOS>{d['pergunta']} {d['resposta']}<EOS>"} for d in datas]
 
 dataset = Dataset.from_list(formatted_data)
 

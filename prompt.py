@@ -21,5 +21,5 @@ output = model.generate(
 )
 
 generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
-print("Ctesibio-model Text response:")
+print("Ctesibio Response:")
 print(generated_text)
