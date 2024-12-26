@@ -1,13 +1,8 @@
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments
 from datasets import Dataset
 
+from training_data import datas
 
-#Here you pass the questions and answers to train your model
-datas = [
-    {"pergunta": "Qual é a capital do Brasil?", "resposta": "A capital do Brasil é Brasília."},
-    {"pergunta": "Quem descobriu o Brasil?", "resposta": "O Brasil foi descoberto por Pedro Álvares Cabral."},
-    {"pergunta": "Qual é a maior floresta tropical do mundo?", "resposta": "A maior floresta tropical do mundo é a Floresta Amazônica."},
-]
 
 model_name = "gpt2"
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
@@ -39,7 +34,7 @@ training_args = TrainingArguments(
     output_dir="./ctesibioAI-model",
     overwrite_output_dir=True,
     per_device_train_batch_size=2,
-    num_train_epochs=50,
+    num_train_epochs=10,
     save_steps=500,
     save_total_limit=2,
     logging_dir="./logs",
