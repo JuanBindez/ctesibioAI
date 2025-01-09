@@ -1,14 +1,14 @@
 
 
-datas = [
-    {"pergunta": "O que é um modelo de linguagem de grande escala (LLM)?", "resposta": "Um LLM é um modelo de inteligência artificial treinado com grandes volumes de texto para compreender e gerar linguagem natural."},
-    {"pergunta": "Quais são os exemplos de LLMs famosos?", "resposta": "Exemplos de LLMs famosos incluem GPT, BERT, T5 e ChatGPT."},
-    {"pergunta": "Para que os LLMs são usados?", "resposta": "LLMs são usados em tarefas como geração de texto, tradução automática, resumo de texto, respostas a perguntas e muito mais."},
-    {"pergunta": "O que significa o termo 'fine-tuning'?", "resposta": "Fine-tuning é o processo de ajustar um LLM pré-treinado em um conjunto de dados específico para uma aplicação ou domínio."},
-    {"pergunta": "O que é 'tokenização'?", "resposta": "Tokenização é o processo de dividir o texto em unidades menores, chamadas de tokens, que podem ser palavras, subpalavras ou caracteres."},
-    {"pergunta": "Como os LLMs aprendem a gerar texto?", "resposta": "LLMs aprendem a gerar texto prevendo a próxima palavra ou token em uma sequência com base em padrões no texto de treinamento."},
-    {"pergunta": "Qual é o principal desafio ao treinar", "resposta": "Os principais desafios incluem o alto custo computacional, a necessidade de grandes volumes de dados e a dificuldade em evitar vieses nos modelos."},
-    {"pergunta": "O que são parâmetros?", "resposta": "Parâmetros são os valores ajustáveis no modelo que determinam como ele processa e gera texto com base nos dados de entrada."},
-    {"pergunta": "O que é um transformer?", "resposta": "Transformers são uma arquitetura de rede neural que usa mecanismos de atenção para processar sequências de dados, como texto."},
-    {"pergunta": "Qual é o papel do 'pre-training'?", "resposta": "O 'pre-training' envolve treinar o modelo em um grande corpus de texto para aprender os padrões gerais da linguagem antes de ajustá-lo para tarefas específicas."},
+data = [
+    {"question": "What is a large language model (LLM)?", "answer": "An LLM is an artificial intelligence model trained on large volumes of text to understand and generate natural language."},
+    {"question": "What are some examples of famous LLMs?", "answer": "Examples of famous LLMs include GPT, BERT, T5, and ChatGPT."},
+    {"question": "What are LLMs used for?", "answer": "LLMs are used in tasks such as text generation, machine translation, text summarization, question answering, and more."},
+    {"question": "What does the term 'fine-tuning' mean?", "answer": "Fine-tuning is the process of adjusting a pre-trained LLM on a specific dataset for a particular application or domain."},
+    {"question": "What is 'tokenization'?", "answer": "Tokenization is the process of breaking text into smaller units, called tokens, which can be words, subwords, or characters."},
+    {"question": "How do LLMs learn to generate text?", "answer": "LLMs learn to generate text by predicting the next word or token in a sequence based on patterns in the training text."},
+    {"question": "What is the main challenge in training?", "answer": "The main challenges include the high computational cost, the need for large datasets, and the difficulty of avoiding biases in the models."},
+    {"question": "What are parameters?", "answer": "Parameters are adjustable values in the model that determine how it processes and generates text based on input data."},
+    {"question": "What is a transformer?", "answer": "Transformers are a neural network architecture that uses attention mechanisms to process data sequences, such as text."},
+    {"question": "What is the role of 'pre-training'?", "answer": "'Pre-training' involves training the model on a large corpus of text to learn general language patterns before fine-tuning it for specific tasks."},
 ]
