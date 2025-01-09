@@ -7,7 +7,7 @@ tokenizer.pad_token = "<PAD>"
 tokenizer.bos_token = "<BOS>"
 tokenizer.eos_token = "<EOS>"
 
-input_text = "<BOS>capital do brasil?"
+input_text = "<BOS>capital of Brazil?"
 inputs = tokenizer.encode(input_text, return_tensors="pt")
 
 output = model.generate(
