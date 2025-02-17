@@ -8,6 +8,8 @@ EXTRAVERSION=""
 NOTES="(update)"
 BRANCH="main"
 
+set -e
+
 if [[ -z $PATCH ]]; then
     PATCH=""
 else
